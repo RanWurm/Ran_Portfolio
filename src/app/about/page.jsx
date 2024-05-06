@@ -82,9 +82,9 @@ return (
 			{/* SKILLS LIST		 */}
 			<motion.div
 			ref = {skillsListRef}
-			initial = {{x:"-300px"}}
+			initial = {{x:"-200px"}}
 			animate  = {isListRefInView? {x:0}: {}}			
-			className="flex gap-4 flex-wrap w-1/2">
+			className="flex gap-4 flex-wrap w-2/3">
 				<div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
 					C
 				</div>
