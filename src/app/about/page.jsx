@@ -82,7 +82,7 @@ return (
 			{/* SKILLS LIST		 */}
 			<motion.div
 			ref = {skillsListRef}
-			initial = {{x:"-200px"}}
+			initial = {{x:"-100px"}}
 			animate  = {isListRefInView? {x:0}: {}}			
 			className="flex gap-4 flex-wrap w-2/3">
 				<div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
@@ -169,7 +169,7 @@ return (
 				 {/* LEFT	 */}
 				 <div className="w-1/3 ">
 					{/* JOB TITLE */}
-					<div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Computer Seince student</div>
+					<div className="bg-white p-3 font-semibold rounded-lg overflow-hidden" style={{ overflowWrap: 'break-word' }}>Computer Seince student</div>
 					{/* JOB DESC */}
 					<div className="p-3 text-sm italic">highly enthusiastic Computer Seince student </div>
 					{/* JOB DATE */}
@@ -206,7 +206,7 @@ return (
 			{/* RIGHT    */}
 			<div className="w-1/3">
 					{/* JOB TITLE */}
-					<div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg w-fit">teacher's assistant</div>
+					<div className="bg-white p-3 font-semibold rounded-lg overflow-hidden" style={{ overflowWrap: 'break-word' }}>teacher's assistant</div>
 					{/* JOB DESC */}
 					<div className="p-3 text-sm italic">T.A in Math And Physics<br/> for student from low backgorund</div>
 					{/* JOB DATE */}
@@ -220,7 +220,9 @@ return (
 				 {/* LEFT	 */}
 				 <div className="w-1/3 ">
 					{/* JOB TITLE */}
-					<div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Pyschometric Tutor</div>
+					<div className="bg-white p-3 font-semibold rounded-lg overflow-hidden" style={{ overflowWrap: 'break-word' }}>
+  PsychometricTutor
+</div>
 					{/* JOB DESC */}
 					<div className="p-3 text-sm italic">
 						helped students understand<br/>
