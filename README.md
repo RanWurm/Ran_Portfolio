@@ -53,6 +53,6 @@ Contact
 For more information, you can reach me at:
 
 Email: [RanWurembrand@gmail.com]
-[LinkedIn: LinkedIn profile](https://www.linkedin.com/in/ran-wurmbrand-a4a039209/)
+[LinkedIn profile](https://www.linkedin.com/in/ran-wurmbrand-a4a039209/)
 Feel free to connect with me for collaboration or any queries!
 ![image](https://github.com/user-attachments/assets/063fddbe-cca1-4579-a31d-47a0f7c5a393)
