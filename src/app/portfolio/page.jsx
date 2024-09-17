@@ -31,7 +31,7 @@ const items = [
 	{
 	  id: 4,
 	  color: "from-purple-300 to-red-300",
-	  title: "convolutional neural network",
+	  title: "Convolutional neural network",
 	  desc: "This project implements a Self-Organizing Map (SOM), a type of artificial neural network used for reducing dimensions and visualizing high-dimensional data. The project uses SOM to classify and visualize the MNIST dataset of handwritten digits. It demonstrates how SOM can be used to identify similar digits and organize them into a two-dimensional grid based on their features.",
 	  img: "/SOM.png",
 	  link: "https://github.com/RanWurm/CNN-Self-Organizing-Map-SOM",
