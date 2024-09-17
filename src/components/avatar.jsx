@@ -1,13 +1,16 @@
 import Image from 'next/image';
 
-
 const Avatar = () => {
   return (
-    <div className="h-1/2 lg:h-full lg:w-1/2 relative ">
-      {/* PARTICLES - Using inline style for full width, height, and z-index control */}
-      <Image src="/chiko.png" alt="hero" fill
-      unoptimized
-      className="object-contain" style={{ zIndex: 1 }} />
+    <div className="w-full flex justify-center items-center relative">
+      <Image 
+        src="/chiko.png" 
+        alt="hero" 
+        width={600} // Larger size for bigger screens
+        height={600} 
+        className="object-contain"
+        style={{ zIndex: 1 }}
+      />
     </div>
   );
 };
