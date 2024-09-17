@@ -7,34 +7,34 @@ const items = [
 	{
 	  id: 1,
 	  color: "from-red-300 to-blue-300",
-	  title: "React Commerce",
-	  desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-	  img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-	  link: "https://lama.dev",
+	  title: "FakeBook",
+	  desc: "Discover Fakebook, the social platform where you can connect, share, and engage with content that matters. Enjoy intuitive features, enhanced privacy, and a vibrant community. Join now and redefine your social networking experience!",
+	  img: "/fakeBook.png",
+	  link: "https://github.com/RanWurm/ProjectPt3",
 	},
 	{
 	  id: 2,
 	  color: "from-blue-300 to-violet-300",
-	  title: "Next.js Medium Blog",
-	  desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-	  img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-	  link: "https://lama.dev",
+	  title: "Neural-Network",
+	  desc: "This Jupyter notebook is designed as part of an educational series to enhance understanding of advanced data analysis techniques. Assignment 5 delves into complex methods that integrate statistical analysis, predictive modeling, and data visualization to extract meaningful insights from large datasets.",
+	  img: "/coat.png",
+	  link: "https://github.com/RanWurm/Neural-Network",
 	},
 	{
 	  id: 3,
 	  color: "from-violet-300 to-purple-300",
-	  title: "Vanilla Book App",
-	  desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-	  img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-	  link: "https://lama.dev",
+	  title: "Arkanoid Game",
+	  desc: "This project is a Java-based implementation of the classic Arkanoid game, developed as part of an Object-Oriented Programming (OOP) class. The game features multiple levels with increasing difficulty, a scoring system, and various power-ups.",
+	  img: "/arkanoid.png",
+	  link: "https://github.com/RanWurm/Arkanoid",
 	},
 	{
 	  id: 4,
 	  color: "from-purple-300 to-red-300",
-	  title: "Spotify Music App",
-	  desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-	  img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-	  link: "https://lama.dev",
+	  title: "convolutional neural network",
+	  desc: "This project implements a Self-Organizing Map (SOM), a type of artificial neural network used for reducing dimensions and visualizing high-dimensional data. The project uses SOM to classify and visualize the MNIST dataset of handwritten digits. It demonstrates how SOM can be used to identify similar digits and organize them into a two-dimensional grid based on their features.",
+	  img: "/SOM.png",
+	  link: "https://github.com/RanWurm/CNN-Self-Organizing-Map-SOM",
 	},
   ];
 const Portfolio = () =>{
@@ -80,7 +80,7 @@ const Portfolio = () =>{
 					</motion.div>
 				</div>
 			</div>
-			<div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
+			<div className="w-screen h-screen flex flex-col gap-2 items-center justify-center text-center">
 						<h1 className="text-8xl">Do you jave a project?</h1>
 						<div className="relative">
 							<motion.svg 
@@ -94,7 +94,7 @@ const Portfolio = () =>{
 									/>
 								</defs>
 								<text fill ="#000">
-									<textPath xlinkHref="#circlePath" className="text-xl">Front-End Developer and Ui Designer</textPath>
+									<textPath xlinkHref="#circlePath" className="text-xl">cs-student FullStack software engineer</textPath>
 								</text>
 							</motion.svg>
 							<Link
