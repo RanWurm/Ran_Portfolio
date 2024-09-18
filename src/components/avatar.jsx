@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Avatar = () => {
   return (
-    <div className="w-3/4 justify-center z-40">
+    <div className="w-3/4 lg:justify-center justify-end items-center z-40">
       <Image 
         src="/chiko.png" 
         alt="hero" 

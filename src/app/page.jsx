@@ -10,11 +10,11 @@ const Homepage = () => {
    initial={{y:"-200vh"}}
    animate ={{y:"0%"}} 
    transition={{duration:1}}>
-   <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8s md:px-12 lg:px-20 xl:px-48">
+   <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
    {/* IMAGE CONTAINER */}
    <ParticleContainer style={{ position: 'absolute', width: '100%', height: '100%', zIndex: -1 }} />
     {/* IMAGE CONTAINER */}
-     <div className="flex justify-center lg:order-2 lg:w-1/2 lg:h-auto py-8 lg:py-0 overflow-hidden">
+     <div className="flex justify-left items-center lg:order-2 lg:w-1/2 lg:h-auto py-8 overflow-hidden">
         <Avatar />
     </div>
     {/* Text CONTAINER */}
