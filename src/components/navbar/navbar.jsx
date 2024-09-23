@@ -10,6 +10,14 @@ const links = [
 	{url: "/about", title:"About"},
 	{url: "/portfolio", title:"Portfolio"},
 	{url: "/contact", title:"Contact"},
+	
+];
+const links2 = [
+	{url: "/", title:"Home"},
+	{url: "/about", title:"About"},
+	{url: "/portfolio", title:"Portfolio"},
+	{url: "/contact", title:"Contact"},
+	{url: "https://drive.google.com/uc?export=download&id=1UgDvv_6hsJnj88w8jqC-A1MDMYzxDuO7", title:"CV"},
 ];
 const Navbar = () => {
 	const[open,setOpen] = useState(false)
@@ -96,6 +104,9 @@ const Navbar = () => {
 				<Link href ="https://www.linkedin.com/in/ran-wurmbrand-a4a039209/" >
 				<Image src = "/linkedin.png" alt ="linkedin" width = {24} height = {24} unoptimized/>
 				</Link>
+				<Link href ="https://drive.google.com/uc?export=download&id=1UgDvv_6hsJnj88w8jqC-A1MDMYzxDuO7" >
+				<Image src = "/cv3.png" alt ="C.V" width = {24} height = {24} unoptimized/>
+				</Link>
 			</div>
 			{/* RSPONSIVE MENU*/}
 			<div className="md:hidden">
@@ -128,7 +139,7 @@ const Navbar = () => {
 			initial = "closed"
 			animate = "opened"
 			className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-6 text-4xl z-50">
-				{links.map(link =>(
+				{links2.map(link =>(
 					<motion.div 
 					className=""
 					variants ={listItemVariant} key = {link.title}>					
@@ -137,6 +148,7 @@ const Navbar = () => {
 				))}
 			</motion.div>											
 			)}				
+			
 			</div>
         </div>
     );
