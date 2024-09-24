@@ -1,8 +1,9 @@
 "use client"
-import {motion, useScroll, useTransform} from "framer-motion"
-import { useRef } from "react";
+import React, { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import Image from 'next/image';
+
 const items = [
 	{
 	  id: 1,
@@ -21,21 +22,22 @@ const items = [
 	  link: "https://github.com/RanWurm/Neural-Network",
 	},
 	{
-	  id: 3,
+		id: 3,
+		color: "from-purple-300 to-red-300",
+		title: "Convolutional neural network",
+		desc: "This project implements a Self-Organizing Map (SOM), a type of artificial neural network used for reducing dimensions and visualizing high-dimensional data. The project uses SOM to classify and visualize the MNIST dataset of handwritten digits. It demonstrates how SOM can be used to identify similar digits and organize them into a two-dimensional grid based on their features.",
+		img: "/SOM.png",
+		link: "https://github.com/RanWurm/CNN-Self-Organizing-Map-SOM",
+	  },
+	{
+	  id: 4,
 	  color: "from-violet-300 to-purple-300",
-	  title: "Arkanoid Game",
+	  title: ["Arkanoid Game", "Ovad's-Sabih Tribute"],
 	  desc: "This project is a Java-based implementation of the classic Arkanoid game, developed as part of an Object-Oriented Programming (OOP) class. The game features multiple levels with increasing difficulty, a scoring system, and various power-ups.",
 	  img: "/arkanoid.png",
 	  link: "https://github.com/RanWurm/Arkanoid",
 	},
-	{
-	  id: 4,
-	  color: "from-purple-300 to-red-300",
-	  title: "Convolutional neural network",
-	  desc: "This project implements a Self-Organizing Map (SOM), a type of artificial neural network used for reducing dimensions and visualizing high-dimensional data. The project uses SOM to classify and visualize the MNIST dataset of handwritten digits. It demonstrates how SOM can be used to identify similar digits and organize them into a two-dimensional grid based on their features.",
-	  img: "/SOM.png",
-	  link: "https://github.com/RanWurm/CNN-Self-Organizing-Map-SOM",
-	},
+
   ];
 const Portfolio = () =>{
 	const ref = useRef();
@@ -56,27 +58,37 @@ const Portfolio = () =>{
 					<motion.div style = {{ x }} className="flex">
 					<div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300"/>	
 					{items.map((item) => (
-						<div 
-							className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`} 
-							key={item.id}
-						>
-							<div className="flex flex-col gap-8 text-white">
-								<h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">{item.title}</h1>
-								<div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-									<Image src={item.img} alt="" fill />
-								</div>	
-									<p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]"> 
-									{item.desc}
-									</p>
-									<Link href={item.link} className="flex justify-end">
-									<button 
-									className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
-										See Demo
-									</button>
-									</Link>
-								</div>
-							</div>
-						))}
+  <div 
+    className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`} 
+    key={item.id}
+  >
+    <div className="flex flex-col gap-8 text-white">
+      <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
+        {Array.isArray(item.title)
+          ? item.title.map((line, index) => (
+              <React.Fragment key={index}>
+                {line}{index < item.title.length - 1 && <br />}
+              </React.Fragment>
+            ))
+          : item.title
+        }
+      </h1>
+      <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
+        <Image src={item.img} alt="" fill />
+      </div>  
+      <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]"> 
+        {item.desc}
+      </p>
+      <Link href={item.link} className="flex justify-end">
+        <button 
+          className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
+          See Demo
+        </button>
+      </Link>
+    </div>
+  </div>
+))}
+
 					</motion.div>
 				</div>
 			</div>
