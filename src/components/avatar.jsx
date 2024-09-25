@@ -2,14 +2,16 @@ import Image from 'next/image';
 
 const Avatar = () => {
   return (
-    <div className="w-3/4 justify-center z-40">
+    <div className="w-3/4 max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[70%] xl:max-w-full 
+                    justify-center z-40 lg:translate-y-8 
+                    -translate-x-8 sm:-translate-x-8 md:-translate-x-12 lg:translate-x-10">
       <Image 
         src="/chiko.png" 
         alt="hero" 
-        width={600} // Larger size for bigger screens
-        height={600} 
-        className="object-contain"
-        style={{ zIndex: 0 }}
+        width={800}
+        height={800} 
+        className="object-contain w-full h-auto"
+        priority
       />
     </div>
   );
