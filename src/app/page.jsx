@@ -11,6 +11,9 @@ const Homepage = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
+      drag="y"
+      dragConstraints={{ left: 0, right: 0 }}
+      style={{ touchAction: "pan-y" }}
     >
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 overflow-hidden">
         <ParticleContainer style={{ position: 'absolute', width: '100%', height: '100%', zIndex: -1 }} />

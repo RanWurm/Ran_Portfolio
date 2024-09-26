@@ -40,55 +40,55 @@ const items = [
 ];
 
 const Portfolio = () => {
-	return (
-	  <motion.div
-		className="min-h-screen"
-		initial={{ opacity: 0 }}
-		animate={{ opacity: 1 }}
-		transition={{ duration: 1 }}
-	  >
-		<div className="min-h-screen flex items-center justify-center">
-		  <h1 className="text-4xl md:text-6xl lg:text-8xl text-center">My Works</h1>
-		</div>
-		
-		{items.map((item) => (
-		  <motion.div 
-			key={item.id}
-			className={`min-h-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
-			initial={{ opacity: 0 }}
-			whileInView={{ opacity: 1 }}
-			transition={{ duration: 0.5 }}
-			viewport={{ margin: "-100px" }}
-		  >
-			<div className="container mx-auto px-4 py-16">
-			  <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-lg shadow-lg p-8">
-				<div className="flex flex-col md:flex-row gap-8 items-center">
-				  <div className="flex-1 space-y-4">
-					<h2 className="text-2xl md:text-4xl font-bold text-white">
-					  {Array.isArray(item.title)
-						? item.title.map((line, index) => (
-							<React.Fragment key={index}>
-							  {line}{index < item.title.length - 1 && <br />}
-							</React.Fragment>
-						  ))
-						: item.title
-					  }
-					</h2>
-					<p className="text-white">{item.desc}</p>
-					<Link href={item.link} className="inline-block">
-					  <button className="px-6 py-2 bg-white text-gray-800 font-semibold rounded hover:bg-gray-100 transition-colors">
-						See Demo
-					  </button>
-					</Link>
-				  </div>
-				  <div className="flex-1 relative w-full aspect-video">
-					<Image src={item.img} alt={item.title} layout="fill" objectFit="cover" className="rounded-lg" />
-				  </div>
-				</div>
-			  </div>
-			</div>
-		  </motion.div>
-		))}
+  return (
+    <motion.div
+      className="min-h-screen overflow-hidden"  // Added 'overflow-hidden' to prevent horizontal scrolling
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-100 to-red-100">
+        <h1 className="text-4xl md:text-6xl lg:text-8xl text-center">My Works</h1>
+      </div>
+      
+      {items.map((item) => (
+        <motion.div 
+          key={item.id}
+          className={`min-h-screen flex items-center justify-center bg-gradient-to-t ${item.color}`}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ margin: "-100px" }}
+        >
+          <div className="container mx-auto px-4 py-16">
+            <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-lg shadow-lg p-8">
+              <div className="flex flex-col md:flex-row gap-8 items-center">
+                <div className="flex-1 space-y-4">
+                  <h2 className="text-2xl md:text-4xl font-bold text-white">
+                    {Array.isArray(item.title)
+                      ? item.title.map((line, index) => (
+                          <React.Fragment key={index}>
+                            {line}{index < item.title.length - 1 && <br />}
+                          </React.Fragment>
+                        ))
+                      : item.title
+                    }
+                  </h2>
+                  <p className="text-white">{item.desc}</p>
+                  <Link href={item.link} className="inline-block">
+                    <button className="px-6 py-2 bg-white text-gray-800 font-semibold rounded hover:bg-gray-100 transition-colors">
+                      See Demo
+                    </button>
+                  </Link>
+                </div>
+                <div className="flex-1 relative w-full aspect-video">
+                  <Image src={item.img} alt={item.title} layout="fill" objectFit="cover" className="rounded-lg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      ))}
 
       <div className="min-h-screen flex flex-col items-center justify-center py-16">
         <h2 className="text-4xl md:text-6xl mb-8">Do you have a project?</h2>
