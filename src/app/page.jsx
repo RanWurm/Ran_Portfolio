@@ -11,9 +11,6 @@ const Homepage = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
-      drag="y"
-      dragConstraints={{ left: 0, right: 0 }}
-      style={{ touchAction: "pan-y" }}
     >
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 overflow-hidden">
         <ParticleContainer style={{ position: 'absolute', width: '100%', height: '100%', zIndex: -1 }} />
@@ -40,10 +37,10 @@ const Homepage = () => {
             </p>
             {/* BUTTONS */}
             <div className="w-full flex justify-center lg:justify-start gap-4">
-              <button className='p-4 rounded-lg ring-1 ring-black bg-black text-white z-50'>
+              <button className='p-2 sm:p-4 rounded-lg ring-1 ring-black bg-black text-white z-50 text-sm sm:text-base'>
                 <Link href="/portfolio">View My Work</Link>
               </button>
-              <button className='p-4 rounded-lg ring-1 ring-black bg-transparent'>
+              <button className='p-3 sm:p-4 rounded-lg ring-1 ring-black bg-transparent text-sm sm:text-base'>
                 <Link href="/contact">Contact Me</Link>
               </button>
             </div>
