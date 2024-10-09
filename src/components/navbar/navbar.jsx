@@ -17,7 +17,7 @@ const links2 = [
 	{url: "/about", title:"About"},
 	{url: "/portfolio", title:"Portfolio"},
 	{url: "/contact", title:"Contact"},
-	{url: "https://drive.google.com/uc?export=download&id=1NsQIRdPhdRlpZdZuaAPD_MjvPegTDXII", title:"CV"},
+	{url: "https://drive.google.com/uc?export=download&id=1-p2urSlrFxvdXyT2styUXKVr9f5fC8Cf", title:"CV"},
 ];
 const Navbar = () => {
 	const[open,setOpen] = useState(false)
@@ -104,7 +104,7 @@ const Navbar = () => {
 				<Link href ="https://www.linkedin.com/in/ran-wurmbrand-a4a039209/" >
 				<Image src = "/linkedin.png" alt ="linkedin" width = {24} height = {24} unoptimized/>
 				</Link>
-				<Link href ="https://drive.google.com/uc?export=download&id=1NsQIRdPhdRlpZdZuaAPD_MjvPegTDXII" >
+				<Link href ="https://drive.google.com/uc?export=download&id=1-p2urSlrFxvdXyT2styUXKVr9f5fC8Cf" >
 				<Image src = "/cv3.png" alt ="C.V" width = {24} height = {24} unoptimized/>
 				</Link>
 			</div>
