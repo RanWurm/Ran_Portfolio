@@ -17,7 +17,7 @@ const links2 = [
 	{url: "/about", title:"About"},
 	{url: "/portfolio", title:"Portfolio"},
 	{url: "/contact", title:"Contact"},
-	{url: "https://drive.google.com/uc?export=download&id=1UgDvv_6hsJnj88w8jqC-A1MDMYzxDuO7", title:"CV"},
+	{url: "https://drive.google.com/uc?export=download&id=1NsQIRdPhdRlpZdZuaAPD_MjvPegTDXII", title:"CV"},
 ];
 const Navbar = () => {
 	const[open,setOpen] = useState(false)
