@@ -104,7 +104,7 @@ const Navbar = () => {
 				<Link href ="https://www.linkedin.com/in/ran-wurmbrand-a4a039209/" >
 				<Image src = "/linkedin.png" alt ="linkedin" width = {24} height = {24} unoptimized/>
 				</Link>
-				<Link href ="https://drive.google.com/uc?export=download&id=1UgDvv_6hsJnj88w8jqC-A1MDMYzxDuO7" >
+				<Link href ="https://drive.google.com/uc?export=download&id=1NsQIRdPhdRlpZdZuaAPD_MjvPegTDXII" >
 				<Image src = "/cv3.png" alt ="C.V" width = {24} height = {24} unoptimized/>
 				</Link>
 			</div>

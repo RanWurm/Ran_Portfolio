@@ -165,7 +165,7 @@ return (
 				 {/* LEFT	 */}
 				 <div className="w-1/3 ">
 					{/* JOB TITLE */}
-					<div className="bg-white p-3 font-semibold rounded-lgoverflow -hidden" style={{ overflowWrap: 'break-word' }}>Computer Seince student</div>
+					<div className="bg-white p-3 font-semibold rounded-lg overflow-hidden" style={{ overflowWrap: 'break-word' }}>Computer Seince student</div>
 					{/* JOB DESC */}
 					<div className="p-3 text-sm italic">highly enthusiastic Computer Seince student </div>
 					{/* JOB DATE */}
@@ -216,7 +216,7 @@ return (
 				 {/* LEFT	 */}
 				 <div className="w-1/3 ">
 					{/* JOB TITLE */}
-					<div className="bg-white p-3 font-semibold rounded-lg overflow-hidden" style={{ overflowWrap: 'break-word' }}>
+					<div className="bg-white p-3 font-semibold rounded-lg overflow-auto" style={{ overflowWrap: 'break-word' }}>
   PsychometricTutor
 </div>
 					{/* JOB DESC */}
