@@ -7,7 +7,7 @@ import Image from 'next/image';
 const items = [
   {
     id: 1,
-    color: "from-red-300 to-blue-300",
+    color: "from-blue-400 to-indigo-400",
     title: "FakeBook",
     desc: "Discover Fakebook, the social platform where you can connect, share, and engage with content that matters. Enjoy intuitive features, enhanced privacy, and a vibrant community. Join now and redefine your social networking experience!",
     img: "/fakeBook.png",
@@ -15,7 +15,7 @@ const items = [
   },
   {
     id: 2,
-    color: "from-blue-300 to-violet-300",
+    color: "from-indigo-400 to-purple-400",
     title: "Neural-Network",
     desc: "This Jupyter notebook is designed as part of an educational series to enhance understanding of advanced data analysis techniques. Assignment 5 delves into complex methods that integrate statistical analysis, predictive modeling, and data visualization to extract meaningful insights from large datasets.",
     img: "/coat.png",
@@ -23,7 +23,7 @@ const items = [
   },
   {
     id: 3,
-    color: "from-purple-300 to-red-300",
+    color: "from-purple-400 to-pink-400",
     title: "Convolutional neural network",
     desc: "This project implements a Self-Organizing Map (SOM), a type of artificial neural network used for reducing dimensions and visualizing high-dimensional data. The project uses SOM to classify and visualize the MNIST dataset of handwritten digits. It demonstrates how SOM can be used to identify similar digits and organize them into a two-dimensional grid based on their features.",
     img: "/SOM.png",
@@ -31,7 +31,15 @@ const items = [
   },
   {
     id: 4,
-    color: "from-violet-300 to-purple-300",
+    color: "from-pink-400 to-red-400",
+    title: "Multi-Threaded-News-App",
+    desc: "This project implements a robust system simulation, designed to showcase key operating system concepts such as process scheduling, multithreading, synchronization, and inter-process communication (IPC). The system is built in C and leverages advanced concurrency mechanisms to manage resources efficiently while executing multiple tasks in parallel.",
+    img: "/news-app.png",
+    link: "https://github.com/RanWurm/Multi-Threaded-News-App",
+  },
+  {
+    id: 5,
+    color: "from-red-400 to-blue-400",
     title: ["Arkanoid Game", "Ovad's-Sabih Tribute"],
     desc: "This project is a Java-based implementation of the classic Arkanoid game, developed as part of an Object-Oriented Programming (OOP) class. The game features multiple levels with increasing difficulty, a scoring system, and various power-ups.",
     img: "/arkanoid.png",
