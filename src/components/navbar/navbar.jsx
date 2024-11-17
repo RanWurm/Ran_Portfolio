@@ -10,6 +10,7 @@ const links = [
 	{url: "/about", title:"About"},
 	{url: "/portfolio", title:"Portfolio"},
 	{url: "/contact", title:"Contact"},
+	{url: "https://drive.google.com/uc?export=download&id=12BbWp8j5_TY58f7CegDsk2pUpiwltqmI", title:"CV"},	
 	
 ];
 const links2 = [
@@ -17,7 +18,7 @@ const links2 = [
 	{url: "/about", title:"About"},
 	{url: "/portfolio", title:"Portfolio"},
 	{url: "/contact", title:"Contact"},
-	{url: "https://drive.google.com/uc?export=download&id=1gM9Ciu8WgTCKgDPqKIiesd_3oJgUxZTy", title:"CV"},
+	{url: "https://drive.google.com/uc?export=download&id=12BbWp8j5_TY58f7CegDsk2pUpiwltqmI", title:"CV"},
 ];
 const Navbar = () => {
 	const[open,setOpen] = useState(false)
@@ -78,7 +79,7 @@ const Navbar = () => {
     return(
         <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl ">
 			{/* Links */}
-			<div className="hidden md:flex gap-4 w-1/3">
+			<div className="hidden md:flex gap-4 w-1/3 z-10">
 			{links.map(link =>(
 					<NavLink link = {link} key = {link.title}/>
 				))}
@@ -104,7 +105,7 @@ const Navbar = () => {
 				<Link href ="https://www.linkedin.com/in/ran-wurmbrand-a4a039209/" >
 				<Image src = "/linkedin.png" alt ="linkedin" width = {24} height = {24} unoptimized/>
 				</Link>
-				<Link href ="https://drive.google.com/uc?export=download&id=1gM9Ciu8WgTCKgDPqKIiesd_3oJgUxZTy" >
+				<Link href ="https://drive.google.com/uc?export=download&id=12BbWp8j5_TY58f7CegDsk2pUpiwltqmI" >
 				<Image src = "/cv3.png" alt ="C.V" width = {24} height = {24} unoptimized/>
 				</Link>
 			</div>
