@@ -7,7 +7,7 @@ import Image from 'next/image';
 const items = [
   {
     id: 1,
-    color: "from-purple-500 to-indigo-600",
+    color: "from-violet-600 to-indigo-700",
     title: "PlayList Converter",
     desc: "Experience seamless music migration with our Spotify to YouTube Playlist Converter. Transform your favorite Spotify collections into YouTube playlists with just a click. Enjoy cross-platform flexibility, preserve your musical curation, and share your tunes effortlessly. Elevate your music streaming experience – convert your playlists now!",
     img: "/music_converter.png",
@@ -15,7 +15,7 @@ const items = [
   },
   {
     id: 2,
-    color: "from-blue-500 to-teal-400",
+    color: "from-cyan-500 to-blue-600",
     title: "Multi-Threaded-News-App",
     desc: "This project implements a robust system simulation, designed to showcase key operating system concepts such as process scheduling, multithreading, synchronization, and inter-process communication (IPC). The system is built in C and leverages advanced concurrency mechanisms to manage resources efficiently while executing multiple tasks in parallel.",
     img: "/news-app.png",
@@ -23,7 +23,7 @@ const items = [
   },
   {
     id: 3,
-    color: "from-green-400 to-cyan-500",
+    color: "from-emerald-400 to-teal-600",
     title: "Neural-Network",
     desc: "This Jupyter notebook is designed as part of an educational series to enhance understanding of advanced data analysis techniques. Assignment 5 delves into complex methods that integrate statistical analysis, predictive modeling, and data visualization to extract meaningful insights from large datasets.",
     img: "/coat.png",
@@ -31,7 +31,7 @@ const items = [
   },
   {
     id: 4,
-    color: "from-yellow-400 to-orange-500",
+    color: "from-amber-400 to-orange-600",
     title: "FakeBook",
     desc: "Discover Fakebook, the social platform where you can connect, share, and engage with content that matters. Enjoy intuitive features, enhanced privacy, and a vibrant community. Join now and redefine your social networking experience!",
     img: "/fakeBook.png",
@@ -39,15 +39,23 @@ const items = [
   },
   {
     id: 5,
-    color: "from-red-500 to-pink-500",
+    color: "from-rose-500 to-pink-600",
+    title: ["Fast Matrix Mutliplication","Implemented in C","(Karatsuba's algorithm)"],
+    desc: "This repository contains a C implementation of the Fast Marching Method (FMM), a numerical technique used primarily for solving the Eikonal equation and other related problems in computational geometry and physics. The FMM is used to model wave propagation and is particularly well-suited for problems involving moving interfaces.",
+    img: "/matrix_multi.png",
+    link: "https://github.com/RanWurm/Fast-Matrix-Multiplication",
+  },
+  {
+    id: 6,
+    color: "from-fuchsia-500 to-purple-600",
     title: "Convolutional Neural Network",
     desc: "This project implements a Self-Organizing Map (SOM), a type of artificial neural network used for reducing dimensions and visualizing high-dimensional data. The project uses SOM to classify and visualize the MNIST dataset of handwritten digits. It demonstrates how SOM can be used to identify similar digits and organize them into a two-dimensional grid based on their features.",
     img: "/SOM.png",
     link: "https://github.com/RanWurm/CNN-Self-Organizing-Map-SOM",
   },
   {
-    id: 6,
-    color: "from-indigo-400 to-purple-500",
+    id: 7,
+    color: "from-sky-400 to-indigo-500",
     title: ["Arkanoid Game", "Ovad's-Sabih Tribute"],
     desc: "This project is a Java-based implementation of the classic Arkanoid game, developed as part of an Object-Oriented Programming (OOP) class. The game features multiple levels with increasing difficulty, a scoring system, and various power-ups.",
     img: "/arkanoid.png",
