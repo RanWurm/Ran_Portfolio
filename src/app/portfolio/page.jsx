@@ -2,32 +2,34 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from 'next/image';
+import Image from "next/image";
 
 const items = [
+
   {
     id: 1,
     color: "from-violet-600 to-indigo-700",
-    title: "PlayList Converter",
-    desc: "Experience seamless music migration with our Spotify to YouTube Playlist Converter. Transform your favorite Spotify collections into YouTube playlists with just a click. Enjoy cross-platform flexibility, preserve your musical curation, and share your tunes effortlessly. Elevate your music streaming experience – convert your playlists now!",
-    img: "/music_converter.png",
-    link: "http://www.playlistconverter.site",
+    title: "Warrantify",
+    desc: "This project implements a Self-Organizing Map (SOM), a type of artificial neural network used for reducing dimensions and visualizing high-dimensional data. The project uses SOM to classify and visualize the MNIST dataset of handwritten digits. It demonstrates how SOM can be used to identify similar digits and organize them into a two-dimensional grid based on their features.",
+    img: "/Warrantify.png",
+    videoUrl: "https://www.youtube.com/embed/O8u7IUW91-U", // Updated to embed URL format
+    link: "https://github.com/RanWurm/Warrantify",
   },
   {
     id: 2,
     color: "from-cyan-500 to-blue-600",
-    title: "Multi-Threaded-News-App",
-    desc: "This project implements a robust system simulation, designed to showcase key operating system concepts such as process scheduling, multithreading, synchronization, and inter-process communication (IPC). The system is built in C and leverages advanced concurrency mechanisms to manage resources efficiently while executing multiple tasks in parallel.",
-    img: "/news-app.png",
-    link: "https://github.com/RanWurm/Multi-Threaded-News-App",
+    title: "PlayList Converter",
+    desc: "Experience seamless music migration with our Spotify to YouTube Playlist Converter. Transform your favorite Spotify collections into YouTube playlists with just a click. Enjoy cross-platform flexibility, preserve your musical curation, and share your tunes effortlessly. Elevate your music streaming experience – convert your playlists now!",
+    img: "/music_converter.png",
+    link: "http://www.playlistconverter.site"
   },
   {
     id: 3,
     color: "from-emerald-400 to-teal-600",
-    title: "Neural-Network",
-    desc: "This Jupyter notebook is designed as part of an educational series to enhance understanding of advanced data analysis techniques. Assignment 5 delves into complex methods that integrate statistical analysis, predictive modeling, and data visualization to extract meaningful insights from large datasets.",
-    img: "/coat.png",
-    link: "https://github.com/RanWurm/Neural-Network",
+    title: "Multi-Threaded-News-App",
+    desc: "This project implements a robust system simulation, designed to showcase key operating system concepts such as process scheduling, multithreading, synchronization, and inter-process communication (IPC). The system is built in C and leverages advanced concurrency mechanisms to manage resources efficiently while executing multiple tasks in parallel.",
+    img: "/news-app.png",
+    link: "https://github.com/RanWurm/Multi-Threaded-News-App",
   },
   {
     id: 4,
@@ -40,33 +42,25 @@ const items = [
   {
     id: 5,
     color: "from-rose-500 to-pink-600",
-    title: ["Fast Matrix Mutliplication","Implemented in C","(Karatsuba's algorithm)"],
-    desc: "This repository contains a C implementation of the Fast Marching Method (FMM), a numerical technique used primarily for solving the Eikonal equation and other related problems in computational geometry and physics. The FMM is used to model wave propagation and is particularly well-suited for problems involving moving interfaces.",
-    img: "/matrix_multi.png",
-    link: "https://github.com/RanWurm/Fast-Matrix-Multiplication",
+    title: "Neural-Network",
+    desc: "This Jupyter notebook is designed as part of an educational series to enhance understanding of advanced data analysis techniques. Assignment 5 delves into complex methods that integrate statistical analysis, predictive modeling, and data visualization to extract meaningful insights from large datasets.",
+    img: "/coat.png",
+    link: "https://github.com/RanWurm/Neural-Network",
   },
   {
     id: 6,
     color: "from-fuchsia-500 to-purple-600",
-    title: "Convolutional Neural Network",
-    desc: "This project implements a Self-Organizing Map (SOM), a type of artificial neural network used for reducing dimensions and visualizing high-dimensional data. The project uses SOM to classify and visualize the MNIST dataset of handwritten digits. It demonstrates how SOM can be used to identify similar digits and organize them into a two-dimensional grid based on their features.",
-    img: "/SOM.png",
-    link: "https://github.com/RanWurm/CNN-Self-Organizing-Map-SOM",
-  },
-  {
-    id: 7,
-    color: "from-sky-400 to-indigo-500",
-    title: ["Arkanoid Game", "Ovad's-Sabih Tribute"],
-    desc: "This project is a Java-based implementation of the classic Arkanoid game, developed as part of an Object-Oriented Programming (OOP) class. The game features multiple levels with increasing difficulty, a scoring system, and various power-ups.",
-    img: "/arkanoid.png",
-    link: "https://github.com/RanWurm/Arkanoid",
+    title: ["Fast Matrix Mutliplication", "Implemented in C", "(Karatsuba's algorithm)"],
+    desc: "This repository contains a C implementation of the Fast Marching Method (FMM), a numerical technique used primarily for solving the Eikonal equation and other related problems in computational geometry and physics. The FMM is used to model wave propagation and is particularly well-suited for problems involving moving interfaces.",
+    img: "/matrix_multi.png",
+    link: "https://github.com/RanWurm/Fast-Matrix-Multiplication",
   },
 ];
 
 const Portfolio = () => {
   return (
     <motion.div
-      className="min-h-screen overflow-hidden"  // Added 'overflow-hidden' to prevent horizontal scrolling
+      className="min-h-screen overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -74,9 +68,9 @@ const Portfolio = () => {
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-100 to-red-100">
         <h1 className="text-4xl md:text-6xl lg:text-8xl text-center">My Works</h1>
       </div>
-      
+
       {items.map((item) => (
-        <motion.div 
+        <motion.div
           key={item.id}
           className={`min-h-screen flex items-center justify-center bg-gradient-to-t ${item.color}`}
           initial={{ opacity: 0 }}
@@ -92,11 +86,11 @@ const Portfolio = () => {
                     {Array.isArray(item.title)
                       ? item.title.map((line, index) => (
                           <React.Fragment key={index}>
-                            {line}{index < item.title.length - 1 && <br />}
+                            {line}
+                            {index < item.title.length - 1 && <br />}
                           </React.Fragment>
                         ))
-                      : item.title
-                    }
+                      : item.title}
                   </h2>
                   <p className="text-white">{item.desc}</p>
                   <Link href={item.link} className="inline-block">
@@ -106,7 +100,26 @@ const Portfolio = () => {
                   </Link>
                 </div>
                 <div className="flex-1 relative w-full aspect-video">
-                  <Image src={item.img} alt={item.title} layout="fill" objectFit="cover" className="rounded-lg" />
+                  {item.videoUrl ? (
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src={item.videoUrl}
+                      title={item.title}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="rounded-lg"
+                    />
+                  ) : (
+                    <Image
+                      src={item.img}
+                      alt={item.title}
+                      layout="fill"
+                      objectFit="cover"
+                      className="rounded-lg"
+                    />
+                  )}
                 </div>
               </div>
             </div>
@@ -117,7 +130,7 @@ const Portfolio = () => {
       <div className="min-h-screen flex flex-col items-center justify-center py-16">
         <h2 className="text-4xl md:text-6xl mb-8">Do you have a project?</h2>
         <div className="relative">
-          <motion.svg 
+          <motion.svg
             animate={{ rotate: 360 }}
             transition={{ duration: 8, ease: "linear", repeat: Infinity }}
             viewBox="0 0 300 300"
@@ -130,7 +143,9 @@ const Portfolio = () => {
               />
             </defs>
             <text fill="#000">
-              <textPath xlinkHref="#circlePath" className="text-xl">cs-student FullStack software engineer</textPath>
+              <textPath xlinkHref="#circlePath" className="text-xl">
+                cs-student FullStack software engineer
+              </textPath>
             </text>
           </motion.svg>
           <Link
@@ -143,6 +158,6 @@ const Portfolio = () => {
       </div>
     </motion.div>
   );
-}
+};
 
 export default Portfolio;
