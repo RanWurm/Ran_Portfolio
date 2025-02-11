@@ -10,7 +10,7 @@ const items = [
     id: 1,
     color: "from-violet-600 to-indigo-700",
     title: "Warrantify",
-    desc: "This project implements a Self-Organizing Map (SOM), a type of artificial neural network used for reducing dimensions and visualizing high-dimensional data. The project uses SOM to classify and visualize the MNIST dataset of handwritten digits. It demonstrates how SOM can be used to identify similar digits and organize them into a two-dimensional grid based on their features.",
+    desc: "This project focuses on developing an innovative app designed to manage electric product warranties, allowing users to easily store and track warranties, find nearby service centers, and receive AI-based recommendations. Built with React Native and Firebase, the app combines user-friendly functionality with advanced AI to offer tailored suggestions, enhancing the user experience and improving warranty management. The app is designed to help users stay organized and access essential services for their electric products.",
     img: "/Warrantify.png",
     videoUrl: "https://www.youtube.com/embed/O8u7IUW91-U", // Updated to embed URL format
     link: "https://github.com/RanWurm/Warrantify",
