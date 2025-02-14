@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import TransitionProvider from "@/components/transitionProvider";
 const inter = Inter({ subsets: ["latin"] });
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: "RanWurmbrand's proflio!",
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
       <TransitionProvider>{children}</TransitionProvider>
+      <Analytics />
       </body>
     </html>
   );
